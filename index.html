@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animesh Predictor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+    height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,255,255,0.07) 0px,
+            rgba(0,255,255,0.07) 1px,
+            transparent 1px,
+            transparent 40px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(0,255,255,0.07) 0px,
+            rgba(0,255,255,0.07) 1px,
+            transparent 1px,
+            transparent 40px
+        ),
+        #020617;
+    color:#e6fdff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* TOP RIGHT TEXT */
+.top-right{
+    position:fixed;
+    top:12px;
+    right:16px;
+    font-size:12px;
+    color:#22d3ee;
+    letter-spacing:.5px;
+}
+
+/* MAIN */
+.container{
+    max-width:480px;
+    width:100%;
+    padding:40px 20px;
+}
+
+/* LOGO */
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin:0 auto 20px;
+    border:3px solid #22d3ee;
+    box-shadow:0 0 35px #22d3ee;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* TITLE */
+h1{
+    color:#22d3ee;
+    letter-spacing:1px;
+}
+
+.subtitle{
+    margin-top:6px;
+    font-size:14px;
+    color:#9af5ff;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin:26px 0;
+    padding:14px 42px;
+    border-radius:30px;
+    background:#22d3ee;
+    color:#00161a;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 0 28px #22d3ee;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* TIMER BOX */
+.timer-box{
+    border:2px solid #22d3ee;
+    box-shadow:0 0 28px rgba(34,211,238,.6);
+    border-radius:16px;
+    padding:28px;
+    margin:18px 0 26px;
+}
+
+.timer-box p{
+    font-size:14px;
+    color:#b6fbff;
+}
+
+.timer{
+    font-size:44px;
+    font-weight:bold;
+    color:#22d3ee;
+    margin:10px 0;
+}
+
+/* FOOTER */
+.footer{
+    margin-top:22px;
+    font-size:12px;
+    color:#87eaff;
+    line-height:1.4;
+}
+
+.copy{
+    margin-top:10px;
+    font-size:11px;
+    color:#63dbff;
+}
+
+/* RESPONSIVE */
+@media(max-width:480px){
+    h1{font-size:24px;}
+    .logo{width:100px;height:100px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-right">
+    100% WORKING MODE JOIN TELEGRAM
+</div>
+
+<div class="container">
+
+    <!-- LOGO IMAGE -->
+    <div class="logo">
+        <img src="photo_6091578375806849075_x.png" alt="Logo">
+    </div>
+
+    <h1>Animesh Predictor</h1>
+    <div class="subtitle">
+        Premium Hack Predictions • Trusted • Accurate
+    </div>
+
+    <!-- BUTTON -->
+    <a class="btn" href="https://t.me/+NS-Msp9JLR4wNDg1" target="_blank">
+        Join Telegram Now
+    </a>
+
+    <!-- TIMER -->
+    <div class="timer-box">
+        <p>Auto Redirect In</p>
+        <div class="timer" id="count">5</div>
+        <p>SECONDS</p>
+    </div>
+
+    <a class="btn" href="https://t.me/+NS-Msp9JLR4wNDg1" target="_blank">
+        Join Telegram Now
+    </a>
+
+    <div class="footer">
+        Disclaimer: This page is for informational purposes only.
+        No guarantee of profits. Use at your own risk.
+    </div>
+
+    <div class="copy">
+        © 2025 Animesh Predictor — All Rights Reserved
+    </div>
+
+</div>
+
+<script>
+let time = 9;
+const counter = document.getElementById("count");
+
+const interval = setInterval(() => {
+    time--;
+    counter.innerText = time;
+
+    if(time <= 0){
+        clearInterval(interval);
+        window.location.href = "https://t.me/+NS-Msp9JLR4wNDg1";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
